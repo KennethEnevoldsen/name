@@ -11,11 +11,11 @@ This is a GitHub template for python packages.
 - [ ] Name of folder `src/name` to package name
 
 ### Workflows:
-- [ ] pytest: 
+- [ ] `.github/workflows/pytest`: 
   - [ ] `name` in line 35 and 54
   - [ ] Add secret `GIST_DOCS_SCOPE` til GitHub action. This is a GitHub authentication token for `repo, read:repo hook, gist`.
   - [ ] Add a gist and gist ID for the coverage comment
-- [ ] publish_to_pypi 
+- [ ] `.github/workflows/publish_to_pypi`:
   - [ ] `name` in line 35 and 54
   - [ ] Add secret: `PYPI_API_TOKEN` to GitHub secrets
 - [ ] Delete `.github/workflows/tutorials.yml` if you do not use tutorials
