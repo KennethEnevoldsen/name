@@ -16,7 +16,6 @@ This is a GitHub template for python packages.
   - [ ] Add secret `GIST_DOCS_SCOPE` til GitHub action. This is a GitHub authentication token for `repo, read:repo hook, gist`.
   - [ ] Add a gist and gist ID for the coverage comment
 - [ ] `.github/workflows/publish_to_pypi`:
-  - [ ] `name` in line 35 and 54
   - [ ] Add secret: `PYPI_API_TOKEN` to GitHub secrets
 - [ ] Delete `.github/workflows/tutorials.yml` if you do not use tutorials
 
