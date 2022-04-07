@@ -30,4 +30,4 @@ This is a GitHub template for python packages.
   - [ ] open the discussion forum if you want it
   - [ ] `replace` the gist ID in line 10 for the coverage comment
 - [ ] replace `README.md` with `README_outline.md`
-- [ ] Replace icong in `docs/_static`, create a favicon using [favicon.io](https://favicon.io/favicon-converter/)
+- [ ] Replace icons in `docs/_static`, create a favicon using [favicon.io](https://favicon.io/favicon-converter/)
