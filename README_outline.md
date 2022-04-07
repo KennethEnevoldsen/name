@@ -18,11 +18,11 @@ it actually explains to you what the package does.
 To get started using this package install it using pip by running the following line in your terminal:
 
 ```
-pip install augmenty
+pip install name
 ```
 
 
-For more detailed instructions on installing see the [installation instructions](https://kennethenevoldsen.github.io/augmenty/installation).
+For more detailed instructions on installing see the [installation instructions](https://kennethenevoldsen.github.io/name/installation).
 
 ## A simple example
 The following shows a simple example of how you can quickly use this package to do what
