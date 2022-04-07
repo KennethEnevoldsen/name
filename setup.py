@@ -1,4 +1,5 @@
 from setuptools import setup
+from setuptools import find_packages
 import os
 
 path = os.path.join("src", "name", "about.py")
@@ -10,6 +11,18 @@ with open(path) as f:
         if line.startswith("__version__"):
             __version__ = line.split('"')[-2]
 
+
+def setup_package():
+    setup(
+        version=__version__,
+        packages=find_packages(
+            "src",
+            exclude=[
+                "application",
+            ],
+        ),
+        package_dir={"": "src"},
+    )
 
 def setup_package():
     setup(version=__version__)
