@@ -31,7 +31,7 @@ jobs:
     - name: Run and write pytest
       run: |
         pip install --editable .
-        pytest --cov=src/name --cov-report term-missing | tee pytest-coverage.txt
+        pytest --cov=src/name --cov-report term-missing
 
 
   pytest-coverage:
@@ -46,9 +46,10 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install --editable .
     - name: Run and write pytest
       run: |
-        pip install --editable .
+        set -o pipefail
         pytest --cov=src/name --cov-report term-missing | tee pytest-coverage.txt
     - name: Pytest coverage comment
       id: coverage-comment
@@ -62,7 +63,7 @@ jobs:
         echo "Coverage Report - ${{ steps.coverage-comment.outputs.coverage }}"
         echo "Coverage Color - ${{ steps.coverage-comment.outputs.color }}"
     - name: Create the Badge
-      uses: schneegans/dynamic-badges-action@v1.2.0
+      uses: schneegans/dynamic-badges-action@v1.3.0
       with:
         auth: ${{ secrets.GIST_DOCS_SCOPE }}
         gistID: ce7ccaf6aaa9faeeba83f9b61b5cfcd8
