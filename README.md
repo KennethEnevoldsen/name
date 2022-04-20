@@ -1,4 +1,4 @@
-# Name, the python package template which makes your dream come true
+# Name, the python package template which makes your dreams come true
 This is a GitHub template for python packages.
 
 
