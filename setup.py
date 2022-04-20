@@ -24,9 +24,6 @@ def setup_package():
         package_dir={"": "src"},
     )
 
-def setup_package():
-    setup(version=__version__)
-
 
 if __name__ == "__main__":
     setup_package()
