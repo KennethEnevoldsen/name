@@ -15,4 +15,4 @@ myst-parser
 
 # code style
 flake8
-black==22.6.0
+black==22.8.0
